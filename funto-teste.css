@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+}
+body{
+  background-color: #E3E3E3;
+}
+.interface{
+  max-width: 1280px;
+  margin: 0 25px;
+}
+/* estilo do header */
+header{
+  /* centralizar */
+  width: 100%;
+  padding: 40px 15px;
+  /* transparencia */
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+/* organição da estrutura */
+header .interface{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* estilo do logo */
+header .logo img{
+  max-width: 42px;
+}
+/* Estilo do Menu dinamico */
+header .logo img .logo-preta{
+  display: none;
+}
+header.rolar{
+  background-color: #fff;
+  padding: 10px 10px;
+  box-shadow: 0 0 8px #0000008a;
+  margin: 0;
+}
+header.rolar .menu-desktop nav ul li a:hover{
+  color: #000;
+}
+header.rolar .menu-desktop nav ul li a{
+  color: #000;
+}
+header.rolar .logo .logo-branca{
+  display: none;
+}
+header .logo .logo-preta{
+  display: none;
+}
+header.rolar .logo .logo-preta{
+  display: block;
+}
+/* ----------------------- */
+/* tirar as bolihnha */
+header .menu-desktop nav ul{
+  list-style-type: none;
+}
+/* configurando os links */
+header .menu-desktop nav ul li{
+  display: inline-block;
+  margin: 0 22px;
+}
+header .menu-desktop nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+/* pequeno zoom/links */
+header .menu-desktop nav a:hover{
+  transform: scale(1.08);
+}
+/* estilo da pagina-inicial */
+section.pagina-inicial{
+  height: 98vh;
+  background-image: url("../imagens/bank_funto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* centralizando pagina-inicial/interface para o centro */
+.pagina-inicial .interface{
+  display: flex;
+  align-items: center;
+  height: 60%;
+  color: #fff;
+}
+/* configurando o titulo/inicio */
+.pagina-inicial .text-inicial h1{
+  font-size: 2em;
+  line-height: 35px;
+  font-weight: 300;
+}
+.pagina-inicial .text-inicial h1 span{
+  display: block;
+  font-weight: 800;
+}
+.pagina-inicial .text-inicial p{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 200;
+  margin: 15px 0;
+}
+.pagina-inicial .text-inicial p span{
+  display: block;
+}
+/* estilo da fonte do texto */
+.fonte-txt{
+  margin-left: 55%;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* estilo das apresentaçoes */
+section.apresentacao{
+  padding: 60px 0;
+}
+/* estilizar os blocos de itens */
+.apresentacao .itens-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 90px;
+}
+/* estilizando as imagens */
+.apresentacao .itens-container .img-itens img{
+  max-width: 270px;
+}
+/* estilazando os titulos */
+.apresentacao .itens-container .txt-itens h3{
+  font-size: 2em;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.apresentacao .itens-container .txt-itens h3 span{
+  font-weight: 250;
+}
+/* estilo do rodapé */
+footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+/* parte de cima/icones */
+footer .top-footer button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  margin: 0 10px; 
+}
+footer .top-footer button:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* parte do meio/links */
+footer .middle-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0 20px; 
+  margin-top: 20px; 
+}
+footer .middle-footer ul li {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+footer .middle-footer ul li {
+color: #fff;   
+} 
+footer .middle-footer ul li a {
+  color: #cac8c8
+}
+footer .middle-footer ul li a:hover{
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: rgba(236, 175, 62, 0.733);
+}
+footer .middle-footer ul li {
+  margin: 10px 0; 
+}
+footer .middle-footer .list-title {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px; 
+}
+footer .middle-footer a {
+  text-decoration: none; 
+  color: #fff; 
+}
+footer .middle-footer a:hover {
+  color: #ddd; 
+}
+footer .middle-footer button {
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  margin: 20px auto 0; 
+  display: block; 
+}
+footer .middle-footer button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+/* parte de baixo */
+footer .bottom-footer {
+  border-top: 2px solid #fff;
+}
+footer .bottom-footer p {
+  color: #fff;
+  margin-top: 10px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
